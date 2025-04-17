@@ -1,0 +1,39 @@
+/* Layout.css */
+
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--background);
+  }
+  
+  .content-container {
+    display: flex;
+    flex: 1;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 2rem;
+    margin-left: 250px; /* Match sidebar width */
+    transition: margin-left 0.3s ease;
+  }
+  
+  /* When sidebar is not present (unauthenticated) */
+  .main-content.no-sidebar {
+    margin-left: 0;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 1024px) {
+    .main-content {
+      margin-left: 0;
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .main-content {
+      padding: 1rem;
+    }
+  }

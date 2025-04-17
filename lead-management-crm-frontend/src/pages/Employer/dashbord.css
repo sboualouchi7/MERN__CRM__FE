@@ -1,0 +1,37 @@
+/* DashboardPage.css */
+
+.dashboard-page {
+    padding: 2rem;
+  }
+  
+  .dashboard-header {
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  
+  .dashboard-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  /* Stats grid will be handled by DashboardStats component */
+  /* Add responsive padding adjustments */
+  @media (max-width: 1024px) {
+    .dashboard-page {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .dashboard-page {
+      padding: 1rem;
+    }
+    
+    .dashboard-header {
+      font-size: 1.75rem;
+      margin-bottom: 1.5rem;
+    }
+  }
